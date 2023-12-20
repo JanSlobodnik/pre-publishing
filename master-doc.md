@@ -1,11 +1,11 @@
 # The Open Mina Documentation
 
 - [Why we are developing Open Mina](https://github.com/JanSlobodnik/pre-publishing/blob/main/why-openmina.md)
-- What Open Mina is
-  - [Openmina Node](https://github.com/openmina/openmina/blob/main/README.md)
+**- What Open Mina is**
+  - [The Open Mina Node](https://github.com/openmina/openmina/blob/main/README.md)
   - [The Mina Web Node](https://openmina.substack.com/p/introducing-the-web-node)
   - [Decentralized SNARK Worker](https://github.com/JanSlobodnik/pre-publishing/blob/main/decentralized-SNARK-worker.md)
-- Core components
+**- Core components**
   - [P2P communication](https://github.com/openmina/openmina/blob/documentation/docs/p2p_service.md)
     - [GossipSub](https://github.com/openmina/mina-wiki/blob/3ea9041e52fb2e606918f6c60bd3a32b8652f016/p2p/mina-gossip.md)
   - [Block production](https://github.com/JanSlobodnik/pre-publishing/blob/main/block-production.md)
@@ -17,11 +17,11 @@
   - [Front End](https://github.com/openmina/mina-frontend/blob/main/README.md)
     - [Dashboard](https://github.com/openmina/mina-frontend/blob/main/docs/MetricsTracing.md#Dashboard)
 - [Testing](https://github.com/openmina/openmina/blob/develop/testing.md)
-- How to run
-  - [Openmina node](https://github.com/openmina/openmina/blob/main/README.md)
-  - [Debugger](https://github.com/openmina/mina-network-debugger?tab=readme-ov-file#Preparing-for-build)
+**- How to run**
+  - [Open Mina node](https://github.com/openmina/openmina/blob/main/README.md)
+  - [Network Debugger](https://github.com/openmina/mina-network-debugger?tab=readme-ov-file#Preparing-for-build)
   - Web Node
-- External links
+**- External links**
   - [Substack](https://openmina.substack.com/)
   - [Medium](https://medium.com/openmina)
   - [Social media](https://twitter.com/viable_systems)
