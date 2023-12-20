@@ -8,27 +8,22 @@
 - [Core components](#core-components)
   - [P2P communication](https://github.com/openmina/openmina/blob/documentation/docs/p2p_service.md)
     - [GossipSub](https://github.com/openmina/mina-wiki/blob/3ea9041e52fb2e606918f6c60bd3a32b8652f016/p2p/mina-gossip.md)
-  - [Block production](#block-production)
-    - [Transactions](#transactions)
-  - [Mempool](#mempool)
-  - [Storage](#storage)
+  - [Block production](https://github.com/JanSlobodnik/pre-publishing/blob/main/block-production.md)
+    - Transactions
   - [Scan state](https://github.com/JanSlobodnik/pre-publishing/blob/main/scan-state.md)
   - [SNARKs](https://github.com/JanSlobodnik/pre-publishing/blob/main/SNARKs.md)
-  - [Developer tools]
-    - [Debugger](#debugger)
-    - [Tracing and Metrics](#tracing-and-metrics)
-  - [Interoperability](#interoperability)
-  - [Front End](#front-end)
-    - [Dashboard](#dashboard)
-    - [Nodes](#nodes)
-    - [State](#state)
-    - [SNARKs](#snarks-1)
-- [Testing](#testing)
-  - [Testing Framework](#testing-framework)
-- [How to run](#how-to-run)
+  - Developer tools
+    - [Debugger](https://github.com/openmina/mina-network-debugger/blob/main/README.md)
+    - Tracing and Metrics
+  - Interoperability
+  - [Front End](https://github.com/openmina/mina-frontend/blob/main/README.md)
+    - [Dashboard](https://github.com/openmina/mina-frontend/blob/main/docs/MetricsTracing.md#Dashboard)
+- [Testing](https://github.com/openmina/openmina/blob/develop/testing.md)
+- How to run
   - [Openmina node set up](https://github.com/openmina/openmina/blob/main/README.md)
-  - [Debugger set up](#debugger-set-up)
-  - [Web Node](#web-node)
-- [External links](#external-links)
-  - [Articles](#articles)
-  - [Social media](#social-media)
+  - Debugger set up
+  - Web Node
+- External links
+  - [Substack](https://openmina.substack.com/)
+  - [Medium](https://medium.com/openmina)
+  - [Social media](https://twitter.com/viable_systems)
