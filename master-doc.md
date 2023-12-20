@@ -13,7 +13,7 @@
   - [Mempool](#mempool)
   - [Storage](#storage)
   - [Scan state](https://github.com/JanSlobodnik/pre-publishing/blob/main/scan-state.md)
-  - [SNARKs](#snarks)
+  - [SNARKs](https://github.com/JanSlobodnik/pre-publishing/blob/main/SNARKs.md)
   - [Developer tools](#developer-tools)
     - [Debugger](#debugger)
     - [Tracing and Metrics](#tracing-and-metrics)
