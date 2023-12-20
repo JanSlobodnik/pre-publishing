@@ -4,7 +4,7 @@
 - [Openmina - a Rust-based Mina node](https://github.com/openmina/openmina/blob/main/README.md)
   - [Openmina Node](https://github.com/openmina/openmina/blob/main/README.md)
   - [The Mina Web Node](https://openmina.substack.com/p/introducing-the-web-node)
-  - [Decentralized SNARK Worker]([#decentralized-snark-worker](https://github.com/JanSlobodnik/pre-publishing/blob/main/decentralized-SNARK-worker.md))
+  - [Decentralized SNARK Worker](https://github.com/JanSlobodnik/pre-publishing/blob/main/decentralized-SNARK-worker.md)
 - [Core components](#core-components)
   - [P2P communication](https://github.com/openmina/openmina/blob/documentation/docs/p2p_service.md)
     - [GossipSub](https://github.com/openmina/mina-wiki/blob/3ea9041e52fb2e606918f6c60bd3a32b8652f016/p2p/mina-gossip.md)
