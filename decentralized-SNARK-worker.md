@@ -9,8 +9,7 @@ In Mina, it is possible to create a compressed (or _succinct_) representation of
 
 Below is a very simplified model of this concept:
 
-
-![image1](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/9af86cef-2149-4cf8-85f8-60843cc699fa)
+![image3](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/2e26f117-5feb-4d93-bc17-83a04a172e9c)
 
 
 The Mina blockchain’s use of SNARKs and recursive composition allows its nodes to operate without needing to process or store the complete transaction history. However, it comes at the cost of performing SNARK work (the generation of SNARK proofs).
@@ -26,7 +25,7 @@ Additionally, SNARK workers must perform jobs in a specific sequential order (th
 Fixing the cause of inefficiency is a very effective way of improving the Mina network’s performance, allowing for faster block times and increased throughput. If we can improve the coordination of SNARK work, then they can use resources more efficiently.
 
 
-![image2](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/42e06537-768e-4d20-9231-e66869790e24)
+![image4](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/0451a3f4-b460-4d70-aa0b-54a3a3ffc502)
 
 
 
@@ -54,8 +53,7 @@ _SNARK proof_ - a completed SNARK job, either not yet added to a block, or alrea
 
 **Staged Ledger** - The staged ledger is the current account state. It contains a pending accounts ledger of unSNARKed transactions. Whenever a transaction is created, it first goes to the Staged Ledger and is applied to the Mina blockchain without an associated SNARK proof.
 
-
-![image3](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/63902059-ff8a-4d02-9f37-fa904835b9ed)
+![image11](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/c24082ef-6986-4a24-adbf-7f660e7c6cfc)
 
 
 _unSNARKed transaction - A transaction that has been added to the Staged Ledger and applied to the Mina blockchain without an associated SNARK job._
@@ -65,8 +63,7 @@ The Staged Ledger also contains:
 **Scan State** - A queue of transactions for which there are pending SNARK jobs _and_ transactions that already have SNARK proofs included in a produced block. The order in which pending SNARK jobs are added to the Scan State must be adhered to by block producers when selecting SNARK 
 
 
-
-![image4](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/668e6658-b9ed-4d18-853e-9b7c1e3ff198)
+![image12](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/17ad0945-f4db-47e2-b9cd-a3db5870f864)
 
 
 _Pending SNARK job - _A transaction that hasn’t yet been associated with a SNARK job. Think of it as a request for a SNARK job.
@@ -75,8 +72,7 @@ _Completed SNARK job - _A SNARK job of a transaction that has already been inclu
 
 **SNARKed Ledger** - This ledger only contains transactions that have an associated SNARK proof. The snarked ledger is updated once a SNARK proof has been emitted from the _scan state_ that attests to all of the transactions included in a tree of transactions added via prior block producers.
 
-
-![image5](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/8f82572b-cb62-49ce-af39-042cda321c65)
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/6ebaa26e-4dd0-48d3-a3c2-28c3c44e14ff)
 
 
 
@@ -85,11 +81,10 @@ _SNARKed transaction - _A Transaction with SNARK is a transaction that has an as
 **Snark Pool - **The SNARK pool is a pool of completed SNARK jobs that have yet to be included in a block. SNARK Workers aim to set high prices yet competitive fees. 
 
 
-![image6](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/a0e53208-85cc-4113-a675-38dcb3387800)
-
-
-
 _completed SNARK - a_ job in the SNARK pool that has been produced by a SNARK worker, but has yet to be purchased by a block producer and included in a block.
+
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/d3f43718-d11c-4de6-8c03-f03397055e2d)
+
 
 **Alice - **a representation of a Mina user initiating a transaction or other operation that requires a SNARK proof.
 
@@ -107,7 +102,7 @@ Alice initiates a transaction that requires a SNARK proof. This could be a simpl
 When a new transaction is added to the Mina blockchain, it's initially without a SNARK proof. As Alice’s transaction is applied to the blockchain, a statement of her transaction is created and added to the Scan State. The statement includes the information that the transaction is pending a SNARK job.
 
 
-![image7](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/38f401c5-fc7d-4191-b2a3-32722318a852)
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/042dc23b-8da1-43f3-884f-959d3f584077)
 
 
 
@@ -126,14 +121,14 @@ In the Scan State, SNARK Workers can be set to two different modes:
 SNARK Workers always choose the first (oldest) pending SNARK job from the Scan State. 
 
 
-![image8](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/95f25f2d-8f05-4ef9-b852-f516a734b846)
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/30c41eb6-01b2-48c5-b05d-406bc7111731)
 
 
 
 Here, it is possible to use a [coordinator](https://docs.minaexplorer.com/minaexplorer/guide-to-snark-work#snark-coordinator) node that informs SNARK workers of which SNARK jobs have been completed, and thus they can avoid working on already completed SNARK jobs.
 
 
-![image9](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/3c6ce7cb-231d-4405-8918-a6b3890cc1e6)
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/1a14d7da-beab-47da-90e6-e365245d83d6)
 
 
 
@@ -147,7 +142,7 @@ Additionally, while the coordinator does receive information regarding which SNA
 In this mode, SNARK workers choose SNARK jobs randomly. While SNARK workers know which jobs have been completed, they do not know which ones are currently being worked on by other workers.
 
 
-![image10](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/6019c1aa-304b-4329-9c13-186fab10aac8)
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/078a0c77-befa-47f4-8a8b-2a213f93cbcf)
 
 
 
@@ -159,7 +154,7 @@ Say there are 3 jobs in the Scan State: 1,2,3. One Worker selects 1, another sel
 ### 3) An extra layer for SNARK worker communication
 
 
-![image11](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/1f3dd6af-d216-41c2-8c55-2c64c7626783)
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/f5571901-326d-4082-b6dd-bb764b5b9102)
 
 
 
@@ -168,8 +163,7 @@ We want to have SNARK workers perform SNARK jobs in the correct order, and we al
 To solve this issue, we have implemented an extra P2P layer through which nodes can communicate job commitment:
 
 
-![image12](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/4e69f1dd-101e-42fd-bcb3-8b5aea687298)
-
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/b5748519-7eaa-4c78-99e1-584866f01ad7)
 
 
 Once a SNARK worker starts performing a SNARK job, it will use this layer to:
@@ -183,7 +177,7 @@ Once a SNARK worker starts performing a SNARK job, it will use this layer to:
 The purpose of this commitment layer is to synchronize the _work pool_ (a combined pool of SNARKs and SNARK commitments) between each peer That way, each snarker knows what other snarkers are working on, in real time:
 
 
-![image13](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/9fe227e2-7fe4-4162-8573-c56e6a0f286c)
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/689bf03d-a567-40ee-b069-658f6615c7d2)
 
 
 
@@ -211,7 +205,8 @@ Commitment logic is an extra P2P layer used by the node itself. Rust nodes use t
 
 Block producer selects Completed SNARK jobs from the SNARK pool to include in block.
 
-![image14](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/e70697c1-a746-4887-9b68-31a84fcef2dc)
+
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/dfe37c36-f6fe-4c7e-b492-595d31a983ff)
 
 
 Think of the SNARK pool as a marketplace for SNARKs jobs – SNARK workers will always aim to set the highest fee possible while remaining competitive within the market. 
