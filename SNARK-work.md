@@ -1,9 +1,5 @@
 
-# The Decentralized SNARK Worker
-
-The Decentralized SNARK worker is a Rust-based node that has the role of generating SNARK proofs. Since SNARK proof generation is a process that costs a lot of computation and time, by decentralizing this responsibility among a large number of nodes, we aim to make the network more secure, stable and efficient.
-
-## Why we're optimizing SNARK work
+# Optimizing SNARK work
 
 A blockchain typically grows in size with every new block added, as every node participating in the network needs to store the complete transaction history. This can present storage and computational challenges.
 
