@@ -12,14 +12,13 @@
   - [SNARKs](https://github.com/JanSlobodnik/pre-publishing/blob/main/SNARKs.md)
   - Developer tools
     - [Debugger](https://github.com/openmina/mina-network-debugger/blob/main/README.md)
-  - Interoperability
   - [Front End](https://github.com/openmina/mina-frontend/blob/main/README.md)
     - [Dashboard](https://github.com/openmina/mina-frontend/blob/main/docs/MetricsTracing.md#Dashboard)
 - [Testing](https://github.com/openmina/openmina/blob/develop/testing.md)
 - How to run
   - [Openmina node](https://github.com/openmina/openmina/blob/main/README.md)
   - [Debugger](https://github.com/openmina/mina-network-debugger?tab=readme-ov-file#Preparing-for-build)
-  - Web Node
+  - [Web Node](https://github.com/openmina/webnode/blob/main/README.md#try-out-the-mina-web-node)
 - External links
   - [Substack](https://openmina.substack.com/)
   - [Medium](https://medium.com/openmina)
