@@ -3,7 +3,7 @@
 - [Why we are developing Open Mina](https://github.com/JanSlobodnik/pre-publishing/blob/main/why-openmina.md)
 - What Open Mina is
   - [Openmina Node](https://github.com/openmina/openmina/blob/main/README.md)
-  - [The Mina Web Node](https://openmina.substack.com/p/introducing-the-web-node)
+  - [The Mina Web Node](https://github.com/openmina/webnode/blob/main/README.md)
   - [Decentralized SNARK Worker](https://github.com/JanSlobodnik/pre-publishing/blob/main/decentralized-SNARK-worker.md)
 - Core components
   - [P2P communication](https://github.com/openmina/openmina/blob/documentation/docs/p2p_service.md)
