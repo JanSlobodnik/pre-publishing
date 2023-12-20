@@ -1,27 +1,25 @@
 # The Open Mina Documentation
 
-- [Why are we developing Openmina](https://github.com/JanSlobodnik/pre-publishing/blob/main/why-openmina.md)
-- [Openmina - a Rust-based Mina node](https://github.com/openmina/openmina/blob/main/README.md)
+- [Why we are developing Open Mina](https://github.com/JanSlobodnik/pre-publishing/blob/main/why-openmina.md)
+- What Open Mina is
   - [Openmina Node](https://github.com/openmina/openmina/blob/main/README.md)
   - [The Mina Web Node](https://openmina.substack.com/p/introducing-the-web-node)
   - [Decentralized SNARK Worker](https://github.com/JanSlobodnik/pre-publishing/blob/main/decentralized-SNARK-worker.md)
-- [Core components](#core-components)
+- Core components
   - [P2P communication](https://github.com/openmina/openmina/blob/documentation/docs/p2p_service.md)
     - [GossipSub](https://github.com/openmina/mina-wiki/blob/3ea9041e52fb2e606918f6c60bd3a32b8652f016/p2p/mina-gossip.md)
   - [Block production](https://github.com/JanSlobodnik/pre-publishing/blob/main/block-production.md)
-    - Transactions
   - [Scan state](https://github.com/JanSlobodnik/pre-publishing/blob/main/scan-state.md)
   - [SNARKs](https://github.com/JanSlobodnik/pre-publishing/blob/main/SNARKs.md)
   - Developer tools
     - [Debugger](https://github.com/openmina/mina-network-debugger/blob/main/README.md)
-    - Tracing and Metrics
   - Interoperability
   - [Front End](https://github.com/openmina/mina-frontend/blob/main/README.md)
     - [Dashboard](https://github.com/openmina/mina-frontend/blob/main/docs/MetricsTracing.md#Dashboard)
 - [Testing](https://github.com/openmina/openmina/blob/develop/testing.md)
 - How to run
-  - [Openmina node set up](https://github.com/openmina/openmina/blob/main/README.md)
-  - Debugger set up
+  - [Openmina node](https://github.com/openmina/openmina/blob/main/README.md)
+  - [Debugger](https://github.com/openmina/mina-network-debugger?tab=readme-ov-file#Preparing-for-build)
   - Web Node
 - External links
   - [Substack](https://openmina.substack.com/)
