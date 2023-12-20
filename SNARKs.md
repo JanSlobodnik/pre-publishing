@@ -17,34 +17,24 @@ Since blocks contain both transactions and SNARKs, each new block updates not on
 
 ### 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/3eebefc5-b212-4f45-8f07-5e8a60ea9740)
 
 
 Via the GossipSub (P2P), a node receives a new block that contains transactions and SNARK proofs.
 
 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/02f74256-6ac4-420e-8762-bfb39c72d073)
 
 
 The Transition Frontier, which contains the staged ledger and the scan state, is updated. The staged ledger includes the new blocks. The scan state is updated with the new jobs.
 
 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/ebb3446c-8a26-4c20-9dca-e395e75470e8)
 
 
 
-### Receiving a Commitment from Rust Node
+### Receiving a Commitment from a Rust Node
 
 We want to avoid wasting time and resources in SNARK generation, specifically, we want to prevent Snarkers from working on the same pending snark job. For that purpose, we have introduced the notion of a _commitment_, in which SNARK workers commit to generating a proof for a pending SNARK job. 
 
@@ -52,22 +42,13 @@ This is a message made by SNARK workers that informs other peers in the network 
 
 Commitments are made through an extra P2P layer that was created for this purpose.
 
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/c3cfb963-33d6-4fc1-a433-d95ec02d7202)
 
 
 Commitments are sent across WebRTC, which enables direct communication between peers via the P2P network.
 
 
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/9fa32591-0e63-40c1-91ab-c77a74c0e8b4)
 
 
 Valid commitments are added to the _commitment pool_.
@@ -81,31 +62,19 @@ For a commitment to be added here, it has to:
 
 
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image7.png "image_tooltip")
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/18f93479-6616-4bb8-8edb-11d62b122e4f)
 
 
 The work pool, which is a part of the modified SNARK pool, is updated with a commitment (including its fee) for a specific pending SNARK job.
 
 
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/5951772d-f0c0-4ad8-bb0b-089c5f42659e)
 
 
 The commitments, once added to the commitment pool, are then broadcasted by the node other peers in the network through direct WebRTC P2P communication.
 
 
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image9.png "image_tooltip")
-
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/87a9992b-8819-437a-b6d4-7a0c14dd0c83)
 
 
 ### Receiving a SNARK from an OCaml node
@@ -114,70 +83,49 @@ The Rust node receives a SNARK proof from an OCaml node (an OCaml SNARK worker.
 
 
 
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image10.png "image_tooltip")
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/51a4c945-7872-4468-ba75-4d8480967981)
 
 
 The SNARK is verified in Rust.
 
 
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/2144c569-52cc-4581-9e4b-0dff82712da8)
 
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image11.png "image_tooltip")
 
 
 If it is the lowest fee SNARK for a specific pending SNARK job, then it is added to the SNARK pool, from where block producers can take SNARKs and add them into blocks.
 
 
 
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image12.png "image_tooltip")
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/48c9540b-704e-42ec-b85b-b33434800283)
 
 
 If it is the lowest fee SNARK for that job, then it is added to the SNARK pool
 
 
 
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/b098ed2d-aa97-438a-8eda-f3399b849bb9)
 
-
-![alt_text](images/image13.png "image_tooltip")
 
 
 After this, the updated SNARK pool with the completed (but not yet included in a block) SNARK is broadcast across the PubSub P2P network via the topic `mina/snark-work/1.0.0` (SNARK pool diff) _and_ directly to other nodes via WebRTC.
 
 
 
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image14.png "image_tooltip")
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/f02fc1f4-e30e-4296-9a20-b7b57e2cf4a1)
 
 
 
 
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image15.png "image_tooltip")
- \
-
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/e9067fcc-2180-46b3-b445-a03ac77c2b16)
 
 
 ### Receiving SNARK from Rust node
 
 
 
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/61bf68d7-7814-40a6-87cc-975a82d5cde8)
 
-
-![alt_text](images/image16.png "image_tooltip")
 
 
 Node receives new available jobs and updates its SNARK pool.
@@ -191,10 +139,7 @@ If a commitment is for a SNARK job that is marked as not yet completed in the sc
 
 
 
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image17.png "image_tooltip")
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/4fe23e29-d95c-40ef-865a-7c2dfaeff9cc)
 
 
 From the SNARK pool, it can be committed to one of the following:
@@ -204,15 +149,11 @@ From the SNARK pool, it can be committed to one of the following:
 1. An available job that hasn’t been completed or included in a block
 2. A job that has been already performed, but the new commitment has a lower fee
 
- \
+ 
 If the commitment is for the lowest fee available, then the SNARK worker begins working on the SNARK proof, which is performed in OCaml. After it is done, the generated SNARK is sent back to the SNARK worker (Rust).
 
 
-
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image18.png "image_tooltip")
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/73ffa6bc-3289-4316-84b9-634e3b7e3f7c)
 
 
 A SNARK worker starts working on the committed job. The SNARK proof that is generated is then checked by a prover in OCaml, after which it is sent back to the SNARK worker.
@@ -220,11 +161,7 @@ A SNARK worker starts working on the committed job. The SNARK proof that is gene
 The SNARK proof is then sent to the SNARK pool.
 
 
-
-<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image19.png "image_tooltip")
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/a28f5ce5-64ab-4d6e-8409-66970bdc2cb5)
 
 
 From here, it is broadcast to Rust nodes directly via WebRTC P2P, and to OCaml nodes indirectly via the `mina/snark-work/1.0.0` (SNARK pool diff) topic of the PubSub P2P network.
