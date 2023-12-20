@@ -1,7 +1,7 @@
 
-# Diversifying the Mina ecosystem
+# Why are we developing the Open Mina node and the Mina Web node?
 
-_Why are we developing the Open Mina node and the Mina Web node?_
+_Diversifying the Mina ecosystem_
 
 Just as with any blockchain, Mina benefits from increasing its diversity of nodes. It contributes to the network’s security, improves the protocol's clarity and ensures transparency across the blockchain. Additionally, it fosters an environment conducive to innovation while also safeguarding the integrity of all network participants.
 
