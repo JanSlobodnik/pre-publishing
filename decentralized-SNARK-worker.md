@@ -1,7 +1,7 @@
 
 
 
-# The Decentralized SNARK Worker: improving the network’s performance by optimizing SNARK generation and application
+# The Decentralized SNARK Worker
 
 A blockchain typically grows in size with every new block added, as every node participating in the network needs to store the complete transaction history. This can present storage and computational challenges.
 
