@@ -1,4 +1,3 @@
-![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/c4bf7a42-eefb-4b9a-9f46-967d89575ce2)
 
 # The Scan State
 
