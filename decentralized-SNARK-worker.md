@@ -66,9 +66,9 @@ The Staged Ledger also contains:
 ![image12](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/17ad0945-f4db-47e2-b9cd-a3db5870f864)
 
 
-_Pending SNARK job - _A transaction that hasn’t yet been associated with a SNARK job. Think of it as a request for a SNARK job.
+_Pending SNARK job -_ A transaction that hasn’t yet been associated with a SNARK job. Think of it as a request for a SNARK job.
 
-_Completed SNARK job - _A SNARK job of a transaction that has already been included in a produced block.
+_Completed SNARK job -_ A SNARK job of a transaction that has already been included in a produced block.
 
 **SNARKed Ledger** - This ledger only contains transactions that have an associated SNARK proof. The snarked ledger is updated once a SNARK proof has been emitted from the _scan state_ that attests to all of the transactions included in a tree of transactions added via prior block producers.
 
@@ -76,21 +76,21 @@ _Completed SNARK job - _A SNARK job of a transaction that has already been inclu
 
 
 
-_SNARKed transaction - _A Transaction with SNARK is a transaction that has an associated SNARK proof.
+_SNARKed transaction -_ A Transaction with SNARK is a transaction that has an associated SNARK proof.
 
-**Snark Pool - **The SNARK pool is a pool of completed SNARK jobs that have yet to be included in a block. SNARK Workers aim to set high prices yet competitive fees. 
+**Snark Pool -** The SNARK pool is a pool of completed SNARK jobs that have yet to be included in a block. SNARK Workers aim to set high prices yet competitive fees. 
 
 
-_completed SNARK - a_ job in the SNARK pool that has been produced by a SNARK worker, but has yet to be purchased by a block producer and included in a block.
+_completed SNARK -_ a job in the SNARK pool that has been produced by a SNARK worker, but has yet to be purchased by a block producer and included in a block.
 
 ![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/d3f43718-d11c-4de6-8c03-f03397055e2d)
 
 
-**Alice - **a representation of a Mina user initiating a transaction or other operation that requires a SNARK proof.
+**Alice -** a representation of a Mina user initiating a transaction or other operation that requires a SNARK proof.
 
 **SNARK workers** - nodes that create SNARK proofs, which are used to compress transactions pending SNARK jobs, as well as two or more already SNARKed transactions and other operations in Mina.
 
-**Coordinator nodes **- Nodes that coordinate SNARK work within a cluster of associated SNARK workers. A SNARK worker may connect to a coordinator node, after which it will receive SNARK jobs via the coordinator. Additionally, it will send and receive information about completed SNARK jobs via the coordinator. 
+**Coordinator nodes ** - Nodes that coordinate SNARK work within a cluster of associated SNARK workers. A SNARK worker may connect to a coordinator node, after which it will receive SNARK jobs via the coordinator. Additionally, it will send and receive information about completed SNARK jobs via the coordinator. 
 
 **Block producers**, who buy SNARK jobs using Mina tokens for block inclusion, always opt for the most affordable job. While multiple SNARK jobs can exist for a single transaction, the cheapest one is automatically chosen by the block producer. 
 
