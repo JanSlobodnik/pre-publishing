@@ -1,7 +1,7 @@
 # The Open Mina Documentation
 
 - [Why we are developing Open Mina](https://github.com/JanSlobodnik/pre-publishing/blob/main/why-openmina.md)
-- What Open Mina is
+- What is Open Mina?
   - [Openmina Node](https://github.com/openmina/openmina/blob/main/README.md)
   - [The Mina Web Node](https://github.com/openmina/webnode/blob/main/README.md)
   - [Decentralized SNARK Worker](https://github.com/JanSlobodnik/pre-publishing/blob/main/decentralized-SNARK-worker.md)
