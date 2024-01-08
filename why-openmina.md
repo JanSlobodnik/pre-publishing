@@ -1,7 +1,7 @@
 
 # Why are we developing the Open Mina node and the Mina Web node?
 
-![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/846904f6-31f2-4eb2-8618-25a9339721e9)
+![image](https://github.com/JanSlobodnik/pre-publishing/assets/60480123/bc7a4ba6-fb9a-41fb-a124-d1235fb3071f)
 
 
 **Increasing security**
