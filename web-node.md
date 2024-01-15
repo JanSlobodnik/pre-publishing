@@ -5,7 +5,7 @@ It’s always beneficial for a blockchain network to decentralize as much as pos
 
 To help decentralize the Mina network, We’ve developed the Mina Web Node, a blockchain node that can be set up in a matter of seconds and configured through a standard internet browser such as Chrome or Firefox. 
 
-<img width="800" alt="WebNode-small" src="https://github.com/JanSlobodnik/pre-publishing/assets/60480123/ba3cba1f-2e37-484e-9b27-550650e97412">
+<a href=https://raw.githubusercontent.com/JanSlobodnik/pre-publishing/main/WebNode.png><img width="800" alt="WebNode-small" src="https://github.com/JanSlobodnik/pre-publishing/assets/60480123/ba3cba1f-2e37-484e-9b27-550650e97412"></a>
 
 
 Mina users can simply launch their own Web Node through a [link in their browser](https://openmina.com/web-node), which will initialize the building of the Web Node.
