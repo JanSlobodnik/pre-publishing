@@ -14,19 +14,17 @@ Mina users can simply launch their own Web Node through a [link in their browser
 
 The browser requires a specific environment for the Web Node to run, which is achieved by loading a Web Assembly (wasm) file. Web Assembly is a binary instruction format through which we can run code in a browser even if it’s written in languages other than javascript.
 
-<img width="900" alt="WebNode1" src="https://github.com/JanSlobodnik/pre-publishing/assets/60480123/5c999f01-8901-4829-b4e7-a746f5ec5723">
-
-
 **Getting ready to verify blocks**
 
 For verifying block SNARKs, we need to fetch a verifier index, which contains constants necessary for verifying a block for a given chain.
 
-<img width="900" alt="WebNode2" src="https://github.com/JanSlobodnik/pre-publishing/assets/60480123/e336ab9e-74fe-44c6-9485-08ba7fbfb8fd">
-
+<img width="900" alt="WebNode1" src="https://github.com/JanSlobodnik/pre-publishing/assets/60480123/5c999f01-8901-4829-b4e7-a746f5ec5723">
 
 **Connecting directly to Mina network**
 
 The Web Node has to connect directly to the Mina network via WebRTC, without using intermediaries. Thanks to WebRTC, in-browser Web Nodes don't put extra weight on the network. Instead, they serve other browser-based nodes or even native nodes themselves, hence contributing their share to the network.
+
+<img width="900" alt="WebNode2" src="https://github.com/JanSlobodnik/pre-publishing/assets/60480123/e336ab9e-74fe-44c6-9485-08ba7fbfb8fd">
 
 **Catching up with the network**
 
