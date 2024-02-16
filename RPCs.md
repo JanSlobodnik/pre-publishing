@@ -92,7 +92,7 @@ Fetches external transitions (blocks)
 
 This is used to fetch all state hashes (tip to root) from the transition frontier. Please note that unlike other RPCs, this one begins with a capital letter.
 
-**Query**:** **
+**Query**:
 
 **Response**: A list of state hashes.
 
