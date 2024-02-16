@@ -4,11 +4,10 @@
 
   - [Openmina Node](#the-open-mina-node)
   - [The Mina Web Node](https://github.com/openmina/webnode/blob/main/README.md)
-- Networking layer
-    - P2P networking stack
-      - [P2P services](https://github.com/openmina/openmina/blob/documentation/docs/p2p_service.md)
-      - [RPCs support](https://github.com/JanSlobodnik/pre-publishing/blob/main/RPCs.md) - in progress
-      -	[GossipSub](https://github.com/openmina/mina-wiki/blob/3ea9041e52fb2e606918f6c60bd3a32b8652f016/p2p/mina-gossip.md)
+- P2P networking stack
+   - [P2P services](https://github.com/openmina/openmina/blob/documentation/docs/p2p_service.md)
+   - [RPCs support](https://github.com/JanSlobodnik/pre-publishing/blob/main/RPCs.md) - in progress
+   -	[GossipSub](https://github.com/openmina/mina-wiki/blob/3ea9041e52fb2e606918f6c60bd3a32b8652f016/p2p/mina-gossip.md)
 
  - [Scan state](docs/scan-state.md)
   - [SNARKs](docs/snark-work.md)
