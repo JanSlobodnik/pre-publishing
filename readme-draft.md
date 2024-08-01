@@ -9,12 +9,13 @@ Run the Open Mina block producer node by following this [guide](https://github.c
 
 ## Description
 
+![image](https://github.com/user-attachments/assets/be096170-7d8f-40a2-a8d1-e59ca99976f1)
+
+
 The Open Mina Node is a Mina node written completely in Rust and capable of verifying blocks of transactions, producing blocks and generating SNARKs.
 
 In the design of the Open Mina node, we are utilizing much of the same logic as in the Mina Web Node. The key difference is that unlike the Web Node, which is an in-browser node with limited resources, the Open Mina node is able to perform resource-intensive tasks such as SNARK proof generation.
 
-
-![image](https://github.com/user-attachments/assets/be096170-7d8f-40a2-a8d1-e59ca99976f1)
 
 
 
