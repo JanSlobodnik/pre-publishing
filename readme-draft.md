@@ -30,7 +30,7 @@ Currently, with the Open Mina node, you can:
 
 We are working on the following:
 
-* Receiving and broadcasting transactions from/into the transaction pool. This is already possible with the node, but is in beta/alpha quality right now and still needs more work.
+* Receiving and broadcasting transactions from/into the transaction pool. This is already possible but is still an early alpha version and needs more work.
 
 
 In the future, we plan to implement:
