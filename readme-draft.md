@@ -53,9 +53,6 @@ Benchmarks page helps us to send transactions. The transactions are signed in th
 Every user can send transactions and they can see in the mempool whether the transactions were sent by their node. 
 
 
-## Producer demo
-
-See the detailed [guide](docs/producer-demo.md).
 
 ## How to launch (with docker compose):
 
