@@ -3,11 +3,12 @@
 
 [![Openmina Daily](https://github.com/openmina/openmina/actions/workflows/daily.yaml/badge.svg)](https://github.com/openmina/openmina/actions/workflows/daily.yaml) [![Changelog][changelog-badge]][changelog] [![release-badge]][release-link] [![Apache licensed]][Apache link]
 
-![image](https://github.com/user-attachments/assets/be096170-7d8f-40a2-a8d1-e59ca99976f1)
-
 ## Run the block producer
 
 Run the Open Mina block producer node by following this [guide](https://github.com/openmina/openmina/blob/main/docs/producer-demo.md).
+
+![image](https://github.com/user-attachments/assets/be096170-7d8f-40a2-a8d1-e59ca99976f1)
+
 
 ## Description
 
@@ -56,9 +57,12 @@ Shows a list of the transactions from the pool and a side panel detail.
 Benchmarks page helps us to send transactions. The transactions are signed in the front end by the Mina signer.
 Every user can send transactions and they can see in the mempool whether the transactions were sent by their node. 
 
+## Launch the block producer demo
+
+Run the Open Mina block producer node by following this [guide](https://github.com/openmina/openmina/blob/main/docs/producer-demo.md).
 
 
-## How to launch (with docker compose):
+## How to launch the node (with Docker compose):
 
 Run:
 
@@ -70,7 +74,7 @@ Then visit http://localhost:8070 in your browser.
 
 By default, `docker compose up` will use the latest node and frontend images available (tagged with `latest`), but specific versions can be selected by using the `OPENMINA_TAG` and `OPENMINA_FRONTEND_TAG` variables.
 
-## How to launch (without docker compose):
+## How to launch the node (without Docker compose):
 
 This installation guide has been tested on Debian and Ubuntu and should work on most distributions of Linux.
 
