@@ -21,23 +21,22 @@ In the design of the Open Mina node, we are utilizing much of the same logic as 
 Currently, with the Open Mina node, you can:
 
 
-* Produce blocks with transactions inside.
+* Produce and prove blocks (with and without transactions).
 * Produce SNARK proofs for transactions.
 * Connect to the network and sync up to the best tip block
 * Validate and apply new blocks and transactions to update consensus and ledger state.
 * Broadcast messages: blocks, SNARK pool
 
 
-We are working on the following:
-
+We are currently working on the following:
 * Receiving and broadcasting transactions from/into the transaction pool. This is already possible but is still an early alpha version and needs more work.
+* A block replayer that uses data from the archive nodes
 
 
 In the future, we plan to implement:
 
 * Direct transfer of MINA funds
 * SnarkyJS support for Rust node, thanks to which you will be able to directly inject simple transactions, such as transferring Mina funds from one account to another.
-* The ability to record/replay all blocks
 
 ## Updates to the Front End
 
