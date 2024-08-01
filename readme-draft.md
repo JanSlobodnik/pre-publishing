@@ -42,11 +42,16 @@ In the future, we plan to implement:
 
 We've added two new pages to the node's front end:
 
-* Mempool
+### Mempool
+
+![image](https://github.com/user-attachments/assets/a66b993d-5a9f-42a7-a946-f19f6e18e6ab)
+
 
 Shows a list of the transactions from the pool and a side panel detail.
 
-* Benchmarks
+### Benchmarks
+
+![image](https://github.com/user-attachments/assets/5aa9f0b8-2f53-4c2e-8b60-ed2ccaa7335b)
 
 Benchmarks page helps us to send transactions. The transactions are signed in the front end by the Mina signer.
 Every user can send transactions and they can see in the mempool whether the transactions were sent by their node. 
