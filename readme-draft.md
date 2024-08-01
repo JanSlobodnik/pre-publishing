@@ -5,8 +5,11 @@
 
 ![image](https://github.com/user-attachments/assets/be096170-7d8f-40a2-a8d1-e59ca99976f1)
 
+## Run the block producer
+
 Run the Open Mina block producer node by following this [guide](https://github.com/openmina/openmina/blob/main/docs/producer-demo.md).
 
+## Description
 
 The Open Mina Node is a Mina node written completely in Rust and capable of verifying blocks of transactions, producing blocks and generating SNARKs.
 
