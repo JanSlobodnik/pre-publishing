@@ -36,7 +36,7 @@ We are currently working on the following:
 In the future, we plan to implement:
 
 * Direct transfer of MINA funds
-* SnarkyJS support for Rust node, thanks to which you will be able to directly inject simple transactions, such as transferring Mina funds from one account to another.
+* O1JS support for Rust node, thanks to which you will be able to directly inject simple transactions, such as transferring Mina funds from one account to another.
 
 ## Updates to the Front End
 
