@@ -24,10 +24,11 @@ Once you have completed the [pre-requisites](https://github.com/openmina/openmin
     ```
 
 4. **Open you browser and visit http://localhost:8070**
+5. 
+![image](https://github.com/user-attachments/assets/be096170-7d8f-40a2-a8d1-e59ca99976f1)
 
 ## Description
 
-![image](https://github.com/user-attachments/assets/be096170-7d8f-40a2-a8d1-e59ca99976f1)
 
 
 The Open Mina Node is a Mina node written completely in Rust and capable of verifying blocks of transactions, producing blocks and generating SNARKs.
