@@ -25,7 +25,7 @@ Once you have completed the [pre-requisites](https://github.com/openmina/openmin
 
 4. **Open you browser and visit http://localhost:8070**
 
-![image](https://github.com/user-attachments/assets/be096170-7d8f-40a2-a8d1-e59ca99976f1)
+![image](https://github.com/user-attachments/assets/c8929509-f68b-4281-bcb9-bad03029fa2f)
 
 
 ## Description
