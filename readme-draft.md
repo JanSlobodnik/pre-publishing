@@ -5,7 +5,25 @@
 
 ## Run the block producer
 
-Run the Open Mina block producer node by following this [guide](https://github.com/openmina/openmina/blob/main/docs/producer-demo.md).
+Once you have completed the [pre-requisites](https://github.com/openmina/openmina/blob/main/docs/producer-demo.md#prerequisites) for your operating system, follow these steps:
+
+1. **Clone this repository:**
+    ```bash
+    git clone https://github.com/openmina/openmina.git
+    ```
+
+2. **Navigate to the repository:**
+
+    ```bash
+    cd openmina
+    ```
+
+3. **Run the following command to start the demo:**
+    ```sh
+    docker compose -f docker-compose.local.producers.yml up
+    ```
+
+4. **Open you browser and visit http://localhost:8070**
 
 ## Description
 
