@@ -41,7 +41,7 @@ In the design of the Open Mina node, we are utilizing much of the same logic as 
 ## Overview of the Node’s current functionalities
 
 
-| The OpenMina node allows you to | In Development | Future Plans |  
+| Current functionalities | In Development | Future Plans |  
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|  
 | &#9745; **Produce and prove blocks** (with and without transactions). | &#9744; Receiving and broadcasting transactions from/into the transaction pool. | &#9744; Direct transfer of MINA funds |  
 | &#9745; **Produce SNARK proofs** for transactions. | &#9744; A block replayer that uses data from the archive nodes| &#9744; O1JS support for Rust node (ability to directly inject simple transactions).|  
@@ -49,25 +49,8 @@ In the design of the Open Mina node, we are utilizing much of the same logic as 
 | &#9745; **Validate and apply new blocks** and transactions to update consensus and ledger state. | | |  
 | &#9745; **Broadcast messages**: blocks, SNARK pool | | |
 
-Currently, with the Open Mina node, you can:
+Please note that receiving and broadcasting transactions from/into the transaction pool is already possible, but is still an early alpha version and needs more work.
 
-
-* Produce and prove blocks (with and without transactions).
-* Produce SNARK proofs for transactions.
-* Connect to the network and sync up to the best tip block
-* Validate and apply new blocks and transactions to update consensus and ledger state.
-* Broadcast messages: blocks, SNARK pool
-
-
-We are currently working on the following:
-* Receiving and broadcasting transactions from/into the transaction pool. This is already possible but is still an early alpha version and needs more work.
-* A block replayer that uses data from the archive nodes
-
-
-In the future, we plan to implement:
-
-* Direct transfer of MINA funds
-* O1JS support for Rust node, thanks to which you will be able to directly inject simple transactions, such as transferring Mina funds from one account to another.
 
 ## Updates to the Front End
 
