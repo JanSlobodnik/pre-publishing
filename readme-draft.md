@@ -93,6 +93,9 @@ docker compose up
 
 Then visit http://localhost:8070 in your browser.
 
+![image](https://github.com/user-attachments/assets/b8e10a12-ec96-44a9-951a-ef0c1b291428)
+
+
 By default, `docker compose up` will use the latest node and frontend images available (tagged with `latest`), but specific versions can be selected by using the `OPENMINA_TAG` and `OPENMINA_FRONTEND_TAG` variables.
 
 ## How to launch the node (without Docker compose):
