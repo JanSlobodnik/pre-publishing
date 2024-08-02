@@ -41,14 +41,14 @@ In the design of the Open Mina node, we are utilizing much of the same logic as 
 ## Overview of the Node’s current functionalities
 
 
-| The OpenMina node allows you to                                                             | In Development                                               | Future Plans                                                                                                                |
-|---------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| &#9745; **Connect** to the network and sync up to the best tip block                              | &#9744; Produce SNARKs in Rust (currently we use OCaml subprocess for that) | &#9744; Direct transfer of MINA funds                                                                                          |
-| &#9745; **Validate** and apply new blocks and transactions to update consensus and ledger state   |                                                              | &#9744; Block production                                                                                                       |
-| &#9745; **Produce SNARKs** to complete SNARK work                                                 |                                                              | &#9744; The ability to record/replay all blocks                                                                                      |
-| &#9745; **Broadcast** messages: blocks, SNARK pool                                                |                                                              | &#9744; SnarkyJS support for Rust node, enabling direct injection of simple transactions, such as transferring Mina funds      |
-| &#9745; **SNARK proof generation** for transactions                                                                                             |                                                              |                                                                          |
-
+| The OpenMina node allows you to | In Development | Future Plans |  
+|---------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|  
+| &#9745; **Produce and prove blocks** (with and without transactions). | &#9744; Receiving and broadcasting transactions from/into the transaction pool. | &#9744; Direct transfer of MINA funds |  
+| &#9745; **Produce SNARK proofs** for transactions. | &#9744; A block replayer that uses data from the archive nodes| &#9744; O1JS support for Rust node (ability to directly inject simple transactions).
+ |  
+| &#9745; **Connect to the network** and sync up to the best tip block | | |  
+| &#9745; **Validate and apply new blocks** and transactions to update consensus and ledger state. | |  |  
+| &#9745; **Broadcast messages**: blocks, SNARK pool | | |
 
 Currently, with the Open Mina node, you can:
 
