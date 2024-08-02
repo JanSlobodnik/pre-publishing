@@ -1,7 +1,10 @@
 
 # The Open Mina Node
+## With the Rust-based Open Mina node, you can produce, validate and apply blocks
 
 [![Openmina Daily](https://github.com/openmina/openmina/actions/workflows/daily.yaml/badge.svg)](https://github.com/openmina/openmina/actions/workflows/daily.yaml) [![Changelog][changelog-badge]][changelog] [![release-badge]][release-link] [![Apache licensed]][Apache link]
+
+
 
 ## Run the block producer
 
